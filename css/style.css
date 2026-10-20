@@ -1463,3 +1463,51 @@ body[data-theme="light"] .clouds{
 @media (prefers-reduced-motion: reduce){
   .cloud, .clouds-waves path{animation:none;}
 }
+
+/* =========================================================
+   FORMULAIRE — champ Services + confirmation sur la page
+   ========================================================= */
+[hidden]{display:none !important;}
+
+.select-wrap{position:relative;}
+.select-wrap select{
+  width:100%; appearance:none; -webkit-appearance:none; -moz-appearance:none;
+  background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-s);
+  padding:13px 44px 13px 14px; color:var(--text);
+  font-family:var(--font-body); font-size:.95rem; cursor:pointer;
+  transition:border-color var(--dur-s) var(--ease);
+}
+.select-wrap select:focus{border-color:var(--accent); outline:none;}
+.select-wrap select:invalid{color:var(--text-dim);}
+.select-wrap select option{color:var(--navy); background:var(--ice);}
+.select-wrap i{
+  position:absolute; right:16px; top:50%; transform:translateY(-50%);
+  font-size:.75rem; color:var(--text-dim); pointer-events:none;
+}
+
+.form-status{
+  margin-top:14px; font-size:.88rem; min-height:1.3em; color:var(--text-dim);
+}
+.form-status--error{color:var(--text); font-weight:500;}
+.form-status--error::before{
+  content:"\f071"; font-family:"Font Awesome 6 Free"; font-weight:900; margin-right:8px; color:var(--accent);
+}
+
+.btn:disabled{opacity:.7; cursor:progress; transform:none;}
+
+.contact-form.is-sent .form-fields{display:none;}
+.form-success{
+  display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px;
+  padding:28px 12px;
+  animation:successIn .6s var(--ease);
+}
+.form-success:focus{outline:none;}
+.form-success-icon{
+  width:64px; height:64px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--accent); color:var(--bg); font-size:1.6rem;
+}
+.form-success h3{font-size:1.4rem;}
+.form-success p{color:var(--text-dim); max-width:36ch;}
+@keyframes successIn{from{opacity:0; transform:translateY(14px) scale(.98);} to{opacity:1; transform:none;}}
+@media (prefers-reduced-motion: reduce){ .form-success{animation:none;} }
