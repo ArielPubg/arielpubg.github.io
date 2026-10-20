@@ -1400,13 +1400,66 @@ body.lightbox-locked{overflow:hidden;}
 }
 
 /* =========================================================
-   HERO — dégradé issu de la palette
+   FOND NUAGEUX — brume bleue animée (derrière toute la page)
    ========================================================= */
-body[data-theme="dark"] .hero{
-  background:linear-gradient(160deg, var(--navy) 0%, var(--blue-deep) 100%);
+.clouds{
+  position:fixed; inset:0; z-index:-1;
+  overflow:hidden; pointer-events:none;
+  background:var(--A-bg);
+  transition:background var(--dur-m) var(--ease);
 }
-body[data-theme="light"] .hero{
-  background:linear-gradient(160deg, var(--ice) 0%, var(--blue-light) 100%);
+/* Couleurs des nuages selon le thème */
+body[data-theme="dark"] .clouds{
+  --c1:var(--blue-deep); --c2:var(--blue-mid); --c3:var(--blue-deep);
+  --c4:var(--blue-light); --c5:var(--blue-mid);
+  --o1:.95; --o2:.40; --o3:.80; --o4:.16; --o5:.30;
+  --wave:color-mix(in srgb, var(--blue-light) 22%, transparent);
 }
-body[data-theme="dark"] .pipeline{background:var(--blue-deep);}
-body[data-theme="light"] .pipeline{background:var(--ice);}
+body[data-theme="light"] .clouds{
+  --c1:var(--blue-light); --c2:var(--blue-mid); --c3:var(--blue-light);
+  --c4:#FFFFFF; --c5:var(--blue-light);
+  --o1:.95; --o2:.22; --o3:.85; --o4:.9; --o5:.7;
+  --wave:color-mix(in srgb, var(--blue-mid) 28%, transparent);
+}
+
+.cloud{
+  position:absolute; border-radius:50%;
+  filter:blur(70px);
+  will-change:transform;
+}
+.cloud.c1{width:64vmax; height:52vmax; left:-18vmax; top:-14vmax; background:var(--c1); opacity:var(--o1); animation:drift1 34s ease-in-out infinite alternate;}
+.cloud.c2{width:48vmax; height:40vmax; right:-12vmax; top:6vmax; background:var(--c2); opacity:var(--o2); animation:drift2 42s ease-in-out infinite alternate;}
+.cloud.c3{width:56vmax; height:46vmax; left:-14vmax; bottom:-16vmax; background:var(--c3); opacity:var(--o3); animation:drift3 38s ease-in-out infinite alternate;}
+.cloud.c4{width:40vmax; height:32vmax; right:8vmax; top:34vh; background:var(--c4); opacity:var(--o4); animation:drift4 46s ease-in-out infinite alternate;}
+.cloud.c5{width:52vmax; height:42vmax; right:-16vmax; bottom:-14vmax; background:var(--c5); opacity:var(--o5); animation:drift5 50s ease-in-out infinite alternate;}
+
+@keyframes drift1{0%{transform:translate(0,0) scale(1);}100%{transform:translate(10vw,8vh) scale(1.18);}}
+@keyframes drift2{0%{transform:translate(0,0) scale(1.1);}100%{transform:translate(-9vw,12vh) scale(.9);}}
+@keyframes drift3{0%{transform:translate(0,0) scale(1);}100%{transform:translate(12vw,-9vh) scale(1.2);}}
+@keyframes drift4{0%{transform:translate(0,0) scale(.9);}100%{transform:translate(-14vw,-6vh) scale(1.25);}}
+@keyframes drift5{0%{transform:translate(0,0) scale(1.05);}100%{transform:translate(-8vw,-10vh) scale(.88);}}
+
+/* Lignes ondulées façon volutes de fumée */
+.clouds-waves{position:absolute; inset:0; width:100%; height:100%;}
+.clouds-waves path{
+  fill:none; stroke:var(--wave); stroke-width:1.4;
+  animation:waveShift 26s ease-in-out infinite alternate;
+}
+.clouds-waves path:nth-child(2){animation-duration:32s; animation-delay:-6s;}
+.clouds-waves path:nth-child(3){animation-duration:38s; animation-delay:-12s;}
+.clouds-waves path:nth-child(4){animation-duration:44s; animation-delay:-18s;}
+@keyframes waveShift{0%{transform:translate(-3%,0);}100%{transform:translate(3%,2%);}}
+
+/* Les sections « ton A » deviennent transparentes pour laisser voir le fond */
+.hero, .pipeline, .projects, .site-footer{background:transparent;}
+/* Les sections « ton B » laissent transparaître une légère teinte nuageuse */
+.about, .certifications, .contact{
+  background:color-mix(in srgb, var(--bg) 92%, transparent);
+}
+
+@media (max-width:720px){
+  .cloud{filter:blur(50px);}
+}
+@media (prefers-reduced-motion: reduce){
+  .cloud, .clouds-waves path{animation:none;}
+}
