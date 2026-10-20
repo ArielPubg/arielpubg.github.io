@@ -757,21 +757,56 @@
         </div>
 
         <form class="contact-form" data-reveal data-reveal-delay="1" action="https://formspree.io/f/xaqygvdy" method="POST">
-          <div class="field">
-            <label for="name">Nom</label>
-            <input id="name" type="text" name="name" placeholder="Votre nom" required>
+          <div class="form-fields">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input id="name" type="text" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" placeholder="vous@exemple.com" required>
+            </div>
+            <div class="field">
+              <label for="services">Services</label>
+              <div class="select-wrap">
+                <select id="services" name="services" required>
+                  <option value="" disabled selected>Choisissez un service…</option>
+                  <option value="Analyse de données">Analyse de données</option>
+                  <option value="Traitement de données">Traitement de données</option>
+                  <option value="Tableaux de bord">Tableaux de bord</option>
+                  <option value="Automatisation de processus">Automatisation de processus</option>
+                  <option value="Chatbot RAG sur mesure">Chatbot RAG sur mesure</option>
+                  <option value="Formation (R, Python, Stata, SPSS)">Formation (R, Python, Stata, SPSS)</option>
+                  <option value="Développement web / application">Développement web / application</option>
+                  <option value="Autre / je ne sais pas encore">Autre / je ne sais pas encore</option>
+                </select>
+                <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Décrivez votre besoin en quelques lignes…" required></textarea>
+            </div>
+
+            <!-- Anti-spam (champ piège invisible) + objet de l'email reçu -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+            <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Envoyer le message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
           </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" placeholder="vous@exemple.com" required>
+
+          <!-- Confirmation affichée sur la page (aucune redirection) -->
+          <div class="form-success" data-form-success hidden tabindex="-1">
+            <span class="form-success-icon"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+            <h3>Message envoyé&nbsp;!</h3>
+            <p>Merci pour votre message. Je reviens vers vous sous 24h avec une première approche.</p>
+            <button type="button" class="btn btn-ghost btn-sm" data-form-reset>
+              <i class="fa-solid fa-rotate-left" aria-hidden="true"></i> Envoyer un autre message
+            </button>
           </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre besoin en quelques lignes…" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">
-            Envoyer le message <i class="fa-solid fa-paper-plane"></i>
-          </button>
         </form>
 
       </div>
@@ -877,6 +912,7 @@
 
 
 <script src="JS/index.js"></script>
+<script src="JS/form.js"></script>
 <script src="JS/analytics.js"></script>
 </body>
 </html>
