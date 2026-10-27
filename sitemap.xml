@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap — Portfolio Ariel Drabo
+  Remplacer https://arielpubg.github.io par l'URL réelle du site (sans slash final).
+  Site one-page : les sections (#about, #pipeline, #certifications, #projects, #contact)
+  ne vont PAS dans le sitemap, Google ignore les ancres (#). Elles sont gérées par
+  les "sitelinks" via la navigation et les données structurées.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Page principale (contient : Profil, Expertise, Certifications, Projets, Contact) -->
+  <url>
+    <loc>https://arielpubg.github.io/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://arielpubg.github.io/Images-logo/arielPhoto.jpeg</image:loc>
+      <image:title>Ariel Drabo — Data Analyst &amp; Développeur</image:title>
+    </image:image>
+  </url>
+
+  <!-- CV -->
+  <url>
+    <loc>https://arielpubg.github.io/certificats/DRABO_ARIEL_CV.pdf</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Certificats (PDF) -->
+  <url><loc>https://arielpubg.github.io/certificats/Certifcat%20Google.pdf</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://arielpubg.github.io/certificats/Certificat.pdf</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://arielpubg.github.io/certificats/gestion_risques.pdf</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://arielpubg.github.io/certificats/gProjet.pdf</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://arielpubg.github.io/certificats/certificate_MEAL.pdf</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://arielpubg.github.io/certificats/sql_sciences_donn%C3%A9es.pdf</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://arielpubg.github.io/certificats/Coursera%20AWS.pdf</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://arielpubg.github.io/certificats/Coursera%20promptEnginneer.pdf</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://arielpubg.github.io/certificats/Coursera_linux.pdf</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://arielpubg.github.io/certificats/Course%20API.pdf</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://arielpubg.github.io/certificats/certificat_pandas.pdf</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://arielpubg.github.io/certificats/Statistique%20Data%20Science.pdf</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+
+</urlset>

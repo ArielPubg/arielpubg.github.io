@@ -1,0 +1,15 @@
+# robots.txt — Portfolio Ariel Drabo
+# À placer à la racine du site : https://arielpubg.github.io/robots.txt
+
+User-agent: *
+Allow: /
+
+# Autorise explicitement Google (pages, images, PDF)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Indique l'emplacement du sitemap
+Sitemap: https://arielpubg.github.io/sitemap.xml
