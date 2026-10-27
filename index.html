@@ -1,22 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  
-<meta charset="UTF-8">
 
- <!-- Google tag (gtag.js) -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRHW4CD3YF"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-KRHW4CD3YF');
 </script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Drabo Ariel - Portfolio</title> 
-<meta name="description" content="Ariel Drabo — Data Analyst & Développeur freelance. J'analyse vos données, je construis vos outils web et j'automatise vos tâches répétitives.">
+
+<!-- ============ SEO ============ -->
+<title>Ariel Drabo (Drabo Ariel) — Data Analyst &amp; Développeur freelance | Ouagadougou</title>
+<meta name="description" content="Ariel Drabo (Drabo Ariel), Data Analyst et développeur web freelance à Ouagadougou, Burkina Faso. Analyse de données, tableaux de bord, automatisation, Django, Python, R.">
+<meta name="author" content="Ariel Drabo">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#0A1931">
+<link rel="canonical" href="https://arielpubg.github.io/">
+<link rel="alternate" hreflang="fr" href="https://arielpubg.github.io/">
+<link rel="alternate" hreflang="x-default" href="https://arielpubg.github.io/">
+
+<!-- Vérification Google Search Console : remplacer CODE_FOURNI_PAR_SEARCH_CONSOLE par votre code -->
+<meta name="google-site-verification" content="CODE_FOURNI_PAR_SEARCH_CONSOLE">
+
+<!-- Open Graph (aperçu WhatsApp, LinkedIn, Facebook) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Ariel Drabo — Portfolio">
+<meta property="og:title" content="Ariel Drabo — Data Analyst &amp; Développeur freelance">
+<meta property="og:description" content="J'analyse vos données, je construis vos outils web et j'automatise vos tâches répétitives.">
+<meta property="og:url" content="https://arielpubg.github.io/">
+<meta property="og:image" content="https://arielpubg.github.io/Images-logo/arielPhoto.jpeg">
+<meta property="og:image:alt" content="Portrait d'Ariel Drabo">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ariel Drabo — Data Analyst &amp; Développeur freelance">
+<meta name="twitter:description" content="Analyse de données, développement web et automatisation. Ouagadougou, Burkina Faso.">
+<meta name="twitter:image" content="https://arielpubg.github.io/Images-logo/arielPhoto.jpeg">
+
+<!-- Données structurées JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://arielpubg.github.io/#website",
+      "url": "https://arielpubg.github.io/",
+      "name": "Ariel Drabo — Portfolio",
+      "inLanguage": "fr",
+      "publisher": { "@id": "https://arielpubg.github.io/#person" }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://arielpubg.github.io/#profile",
+      "url": "https://arielpubg.github.io/",
+      "name": "Ariel Drabo — Portfolio",
+      "inLanguage": "fr",
+      "mainEntity": { "@id": "https://arielpubg.github.io/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://arielpubg.github.io/#person",
+      "name": "Ariel Drabo",
+      "alternateName": ["Drabo Ariel", "Ariel Drabo Data Analyst"],
+      "url": "https://arielpubg.github.io/",
+      "image": "https://arielpubg.github.io/Images-logo/arielPhoto.jpeg",
+      "jobTitle": "Data Analyst & Développeur freelance",
+      "description": "Data Analyst et développeur web freelance basé à Ouagadougou : analyse de données, tableaux de bord, automatisation, Django.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ouagadougou",
+        "addressCountry": "BF"
+      },
+      "knowsAbout": ["Analyse de données", "Python", "R", "SQL", "Django", "Pandas", "Automatisation", "Tableaux de bord"],
+      "sameAs": [
+        "https://github.com/ArielPubg",
+        "https://www.linkedin.com/in/ariel-drabo-78a99b345"
+      ]
+    }
+  ]
+}
+</script>
 
 <!-- Polices professionnelles : Poppins (titres) · Roboto (texte) · Roboto Mono (code) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,15 +96,14 @@
 <link rel="stylesheet" href="css/style.css">
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
-<link rel="icon" type="image/png" href="logo.jpg">
+<link rel="icon" type="image/jpeg" href="logo.jpg">
 <link rel="apple-touch-icon" href="logo.jpg">
 <!-- SheetJS : lecture de fichiers Excel côté navigateur, pour le viewer interactif -->
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-<!-- Vercel Web Analytics (pas de cookies, pas de consentement requis) -->
+<!-- Stub analytics (le script Vercel a été retiré : il n'existe pas sur GitHub Pages et provoquait une erreur 404) -->
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
-<script defer src="/_vercel/insights/script.js"></script>
 
 <!-- QRCode.js (davidshimjs) — génération de QR en pur navigateur -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -70,7 +139,7 @@
 <!-- ============ NAV ============ -->
 <header class="site-nav" id="site-nav">
   <div class="wrap nav-inner">
-    <a href="#top" class="brand">
+    <a href="#top" class="brand" aria-label="Ariel Drabo — retour en haut">
       <span class="brand-prompt">&gt;</span>ariel<span class="brand-dot">.</span>data
     </a>
 
@@ -87,8 +156,8 @@
         <i class="fa-solid fa-moon" aria-hidden="true"></i>
         <i class="fa-solid fa-sun" aria-hidden="true"></i>
       </button>
-      <a href="certificats/DRABO_ARIEL_CV.pdf" download class="btn btn-cv">
-        <span>CV</span><i class="fa-solid fa-arrow-down"></i>
+      <a href="certificats/DRABO_ARIEL_CV.pdf" download class="btn btn-cv" aria-label="Télécharger le CV d'Ariel Drabo (PDF)">
+        <span>CV</span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
       </a>
       <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
@@ -119,14 +188,14 @@
         </p>
 
         <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">Discuter d'un projet <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-primary">Discuter d'un projet <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
           <a href="#projects" class="btn btn-ghost">Voir mes projets</a>
         </div>
 
         <div class="hero-socials">
-          <a href="https://github.com/ArielPubg" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/ariel-drabo-78a99b345" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://wa.me/qr/6LASBTSKULJ3O1" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://github.com/ArielPubg" target="_blank" rel="noopener noreferrer me" aria-label="GitHub d'Ariel Drabo"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/ariel-drabo-78a99b345" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn d'Ariel Drabo"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://wa.me/qr/6LASBTSKULJ3O1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
         </div>
       </div>
 
@@ -139,9 +208,9 @@
           <div class="terminal-body mono" id="terminal-body" aria-hidden="true"></div>
         </div>
         <div class="hero-badges">
-          <span class="badge"><i class="fa-solid fa-database"></i>Données</span>
-          <span class="badge"><i class="fa-solid fa-code"></i>Web</span>
-          <span class="badge"><i class="fa-solid fa-gears"></i>Automatisation</span>
+          <span class="badge"><i class="fa-solid fa-database" aria-hidden="true"></i>Données</span>
+          <span class="badge"><i class="fa-solid fa-code" aria-hidden="true"></i>Web</span>
+          <span class="badge"><i class="fa-solid fa-gears" aria-hidden="true"></i>Automatisation</span>
         </div>
       </div>
 
@@ -158,7 +227,7 @@
 
         <div class="about-portrait" data-reveal>
           <div class="portrait-frame">
-            <img src="Images-logo/arielPhoto.jpeg" alt="Portrait d'Ariel Drabo" loading="lazy">
+            <img src="Images-logo/arielPhoto.jpeg" alt="Portrait d'Ariel Drabo, Data Analyst et développeur freelance à Ouagadougou" loading="lazy">
           </div>
           <p class="portrait-caption mono">Ouagadougou, Burkina Faso</p>
         </div>
@@ -166,10 +235,11 @@
         <div class="about-content" data-reveal data-reveal-delay="1">
           <h2 class="section-title">Je résous des problèmes concrets avec les données et le code.</h2>
           <p class="about-text">
-            J'aide les entreprises et les organisations à comprendre leurs données, à mettre en ligne
-            des outils fiables et à supprimer les tâches manuelles répétitives grâce à des scripts
-            d'automatisation. Chaque projet part d'un besoin réel : moins de temps perdu, plus de
-            décisions fondées sur des faits.
+            Je m'appelle Ariel Drabo (Drabo Ariel), Data Analyst et développeur freelance à Ouagadougou,
+            au Burkina Faso. J'aide les entreprises et les organisations à comprendre leurs données,
+            à mettre en ligne des outils fiables et à supprimer les tâches manuelles répétitives grâce
+            à des scripts d'automatisation. Chaque projet part d'un besoin réel : moins de temps perdu,
+            plus de décisions fondées sur des faits.
           </p>
           <p class="about-text">
             Rigoureux et méthodique, je documente ce que je livre et je reste disponible après
@@ -179,17 +249,17 @@
 
           <div class="pillars">
             <div class="pillar">
-              <i class="fa-solid fa-chart-line"></i>
+              <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
               <h3>Analyse de données</h3>
               <p>Nettoyage, exploration et modélisation pour transformer vos chiffres en décisions.</p>
             </div>
             <div class="pillar">
-              <i class="fa-solid fa-laptop-code"></i>
+              <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
               <h3>Développement web</h3>
               <p>Applications et sites sur mesure, du prototype à la mise en production.</p>
             </div>
             <div class="pillar">
-              <i class="fa-solid fa-robot"></i>
+              <i class="fa-solid fa-robot" aria-hidden="true"></i>
               <h3>Automatisation</h3>
               <p>Scripts et workflows qui suppriment les tâches manuelles récurrentes.</p>
             </div>
@@ -269,14 +339,14 @@
 
       <div class="lang-grid" data-reveal data-reveal-delay="3">
         <div class="lang-col">
-          <h4 class="mono">// Langages</h4>
+          <h3 class="mono">// Langages</h3>
           <div class="bar-row"><span>Python</span><div class="bar"><i style="--w:90%"></i></div></div>
           <div class="bar-row"><span>SQL</span><div class="bar"><i style="--w:90%"></i></div></div>
           <div class="bar-row"><span>R</span><div class="bar"><i style="--w:78%"></i></div></div>
           <div class="bar-row"><span>JavaScript / C++</span><div class="bar"><i style="--w:62%"></i></div></div>
         </div>
         <div class="lang-col">
-          <h4 class="mono">// Frameworks & outils</h4>
+          <h3 class="mono">// Frameworks &amp; outils</h3>
           <div class="bar-row"><span>Django</span><div class="bar"><i style="--w:82%"></i></div></div>
           <div class="bar-row"><span>Flask</span><div class="bar"><i style="--w:68%"></i></div></div>
           <div class="bar-row"><span>Bootstrap</span><div class="bar"><i style="--w:90%"></i></div></div>
@@ -293,102 +363,102 @@
       <h2 class="section-title" data-reveal>Formation continue, validée.</h2>
 
       <div class="cert-grid" data-reveal data-reveal-delay="1">
-  <button class="cert-card" type="button" data-cert-open
-    data-cert-src="certificats/Certifcat Google.pdf"
-    data-cert-title="Python — Coursera"
-    aria-haspopup="dialog" aria-label="Voir le certificat Python — Coursera en grand">
-    <img src="certificats/python COUSERA.jpg" alt="Certificat Python" loading="lazy">
-    <span>Python — Coursera</span>
-  </button>
+        <button class="cert-card" type="button" data-cert-open
+          data-cert-src="certificats/Certifcat Google.pdf"
+          data-cert-title="Python — Coursera"
+          aria-haspopup="dialog" aria-label="Voir le certificat Python — Coursera en grand">
+          <img src="certificats/python COUSERA.jpg" alt="Certificat Python Coursera d'Ariel Drabo" loading="lazy">
+          <span>Python — Coursera</span>
+        </button>
 
-  <button class="cert-card" type="button" data-cert-open
-    data-cert-src="certificats/Certificat.pdf"
-    data-cert-title="Data Analysis"
-    aria-haspopup="dialog" aria-label="Voir le certificat Data Analysis en grand">
-    <img src="certificats/Data Analysis ForceN.png" alt="Certificat Data Analysis" loading="lazy">
-    <span>Data Analysis</span>
-  </button>
+        <button class="cert-card" type="button" data-cert-open
+          data-cert-src="certificats/Certificat.pdf"
+          data-cert-title="Data Analysis"
+          aria-haspopup="dialog" aria-label="Voir le certificat Data Analysis en grand">
+          <img src="certificats/Data Analysis ForceN.png" alt="Certificat Data Analysis d'Ariel Drabo" loading="lazy">
+          <span>Data Analysis</span>
+        </button>
 
-   <button class="cert-card" type="button" data-cert-open
-    data-cert-src="certificats/gestion_risques.pdf"
-    data-cert-title="Gestion de risque de catastrophe dans les contextes FCV"
-    aria-haspopup="dialog" aria-label="Voir le certificat Gestion de risque de catastrophe dans les contextes FCV en grand">
-    <img src="certificats/gc.png" alt="Certificat Gestion de risque de catastrophe dans les contextes FCV" loading="lazy">
-    <span>Gestion de risque de catastrophe dans les contextes FCV</span>
-  </button>
+        <button class="cert-card" type="button" data-cert-open
+          data-cert-src="certificats/gestion_risques.pdf"
+          data-cert-title="Gestion de risque de catastrophe dans les contextes FCV"
+          aria-haspopup="dialog" aria-label="Voir le certificat Gestion de risque de catastrophe dans les contextes FCV en grand">
+          <img src="certificats/gc.png" alt="Certificat Gestion de risque de catastrophe dans les contextes FCV" loading="lazy">
+          <span>Gestion de risque de catastrophe dans les contextes FCV</span>
+        </button>
 
-   <button class="cert-card" type="button" data-cert-open
-    data-cert-src="certificats/gProjet.pdf"
-    data-cert-title="Gestion de projet Technique en cas d'urgence EHA"
-    aria-haspopup="dialog" aria-label="Voir le certificat Gestion de projet Technique en cas d'urgence EHA en grand">
-    <img src="certificats/gP.png" alt="Certificat Gestion de projet Technique en cas d'urgence EHA" loading="lazy">
-    <span>Gestion de projet Technique en cas d'urgence EHA</span>
-  </button>
+        <button class="cert-card" type="button" data-cert-open
+          data-cert-src="certificats/gProjet.pdf"
+          data-cert-title="Gestion de projet Technique en cas d'urgence EHA"
+          aria-haspopup="dialog" aria-label="Voir le certificat Gestion de projet Technique en cas d'urgence EHA en grand">
+          <img src="certificats/gP.png" alt="Certificat Gestion de projet Technique en cas d'urgence EHA" loading="lazy">
+          <span>Gestion de projet Technique en cas d'urgence EHA</span>
+        </button>
 
-   <button class="cert-card" type="button" data-cert-open
-    data-cert-src="certificats/certificate_MEAL.pdf"
-    data-cert-title="MEAL-Suivi-Evaluation-Rédevabilité-Apprentissage"
-    aria-haspopup="dialog" aria-label="Voir le certificat MEAL-Suivi-Evaluation-Rédevabilité-Apprentissage en grand">
-    <img src="certificats/meal.png" alt="Certificat MEAL-Suivi-Evaluation-Rédevabilité-Apprentissage" loading="lazy">
-    <span>MEAL-Suivi-Evaluation-Rédevabilité-Apprentissage</span>
-  </button>
+        <button class="cert-card" type="button" data-cert-open
+          data-cert-src="certificats/certificate_MEAL.pdf"
+          data-cert-title="MEAL-Suivi-Evaluation-Rédevabilité-Apprentissage"
+          aria-haspopup="dialog" aria-label="Voir le certificat MEAL-Suivi-Evaluation-Rédevabilité-Apprentissage en grand">
+          <img src="certificats/meal.png" alt="Certificat MEAL-Suivi-Evaluation-Rédevabilité-Apprentissage" loading="lazy">
+          <span>MEAL-Suivi-Evaluation-Rédevabilité-Apprentissage</span>
+        </button>
 
-     <button class="cert-card" type="button" data-cert-open
-    data-cert-src="certificats/sql_sciences_données.pdf"
-    data-cert-title="SQL Sciences des données"
-    aria-haspopup="dialog" aria-label="Voir le certificat SQL Sciences des données en grand">
-    <img src="certificats/sql_python.png" alt="Certificat SQL Sciences des données" loading="lazy">
-    <span>SQL Sciences des données</span>
-  </button>
+        <button class="cert-card" type="button" data-cert-open
+          data-cert-src="certificats/sql_sciences_données.pdf"
+          data-cert-title="SQL Sciences des données"
+          aria-haspopup="dialog" aria-label="Voir le certificat SQL Sciences des données en grand">
+          <img src="certificats/sql_python.png" alt="Certificat SQL Sciences des données" loading="lazy">
+          <span>SQL Sciences des données</span>
+        </button>
 
-  <button class="cert-card" type="button" data-cert-open
-    data-cert-src="certificats/Coursera AWS.pdf"
-    data-cert-title="AWS Cloud"
-    aria-haspopup="dialog" aria-label="Voir le certificat AWS Cloud en grand">
-    <img src="certificats/AWS COURSERA.jpg" alt="Certificat AWS Cloud" loading="lazy">
-    <span>AWS Cloud</span>
-  </button>
+        <button class="cert-card" type="button" data-cert-open
+          data-cert-src="certificats/Coursera AWS.pdf"
+          data-cert-title="AWS Cloud"
+          aria-haspopup="dialog" aria-label="Voir le certificat AWS Cloud en grand">
+          <img src="certificats/AWS COURSERA.jpg" alt="Certificat AWS Cloud" loading="lazy">
+          <span>AWS Cloud</span>
+        </button>
 
-  <button class="cert-card" type="button" data-cert-open
-    data-cert-src="certificats/Coursera promptEnginneer.pdf"
-    data-cert-title="Prompt Engineering"
-    aria-haspopup="dialog" aria-label="Voir le certificat Prompt Engineering en grand">
-    <img src="certificats/promptEnginneer.png" alt="Certificat Prompt Engineering" loading="lazy">
-    <span>Prompt Engineering</span>
-  </button>
+        <button class="cert-card" type="button" data-cert-open
+          data-cert-src="certificats/Coursera promptEnginneer.pdf"
+          data-cert-title="Prompt Engineering"
+          aria-haspopup="dialog" aria-label="Voir le certificat Prompt Engineering en grand">
+          <img src="certificats/promptEnginneer.png" alt="Certificat Prompt Engineering" loading="lazy">
+          <span>Prompt Engineering</span>
+        </button>
 
-  <button class="cert-card" type="button" data-cert-open
-    data-cert-src="certificats/Coursera_linux.pdf"
-    data-cert-title="Introduction à Linux"
-    aria-haspopup="dialog" aria-label="Voir le certificat Introduction à Linux en grand">
-    <img src="certificats/linux.png" alt="Certificat Introduction à Linux" loading="lazy">
-    <span>Introduction à Linux</span>
-  </button>
+        <button class="cert-card" type="button" data-cert-open
+          data-cert-src="certificats/Coursera_linux.pdf"
+          data-cert-title="Introduction à Linux"
+          aria-haspopup="dialog" aria-label="Voir le certificat Introduction à Linux en grand">
+          <img src="certificats/linux.png" alt="Certificat Introduction à Linux" loading="lazy">
+          <span>Introduction à Linux</span>
+        </button>
 
-  <button class="cert-card" type="button" data-cert-open
-    data-cert-src="certificats/Course API.pdf"
-    data-cert-title="API avec Python"
-    aria-haspopup="dialog" aria-label="Voir le certificat API avec Python en grand">
-    <img src="certificats/api_python.png" alt="Certificat API avec Python" loading="lazy">
-    <span>API avec Python</span>
-  </button>
+        <button class="cert-card" type="button" data-cert-open
+          data-cert-src="certificats/Course API.pdf"
+          data-cert-title="API avec Python"
+          aria-haspopup="dialog" aria-label="Voir le certificat API avec Python en grand">
+          <img src="certificats/api_python.png" alt="Certificat API avec Python" loading="lazy">
+          <span>API avec Python</span>
+        </button>
 
-  <button class="cert-card" type="button" data-cert-open
-    data-cert-src="certificats/certificat_pandas.pdf"
-    data-cert-title="Pandas"
-    aria-haspopup="dialog" aria-label="Voir le certificat Pandas en grand">
-    <img src="certificats/pandas.png" alt="Certificat Pandas" loading="lazy">
-    <span>Pandas</span>
-  </button>
+        <button class="cert-card" type="button" data-cert-open
+          data-cert-src="certificats/certificat_pandas.pdf"
+          data-cert-title="Pandas"
+          aria-haspopup="dialog" aria-label="Voir le certificat Pandas en grand">
+          <img src="certificats/pandas.png" alt="Certificat Pandas" loading="lazy">
+          <span>Pandas</span>
+        </button>
 
-  <button class="cert-card" type="button" data-cert-open
-    data-cert-src="certificats/Statistique Data Science.pdf"
-    data-cert-title="Statistiques pour la Data Science"
-    aria-haspopup="dialog" aria-label="Voir le certificat Statistiques pour la Data Science en grand">
-    <img src="certificats/statistique.png" alt="Certificat Statistiques pour la Data Science" loading="lazy">
-    <span>Statistiques pour la Data Science</span>
-  </button>
-</div>
+        <button class="cert-card" type="button" data-cert-open
+          data-cert-src="certificats/Statistique Data Science.pdf"
+          data-cert-title="Statistiques pour la Data Science"
+          aria-haspopup="dialog" aria-label="Voir le certificat Statistiques pour la Data Science en grand">
+          <img src="certificats/statistique.png" alt="Certificat Statistiques pour la Data Science" loading="lazy">
+          <span>Statistiques pour la Data Science</span>
+        </button>
+      </div>
     </div>
   </section>
 
@@ -403,7 +473,7 @@
 
       <div class="project-list">
 
-        <!-- 1 — a une vidéo -->
+        <!-- 1 — Agence de voyage (vidéo) -->
         <article class="project-card" data-reveal>
           <div class="project-media">
             <div class="player-window">
@@ -417,10 +487,10 @@
                   <source src="videos/presentation agence de voyage.mp4" type="video/mp4">
                 </video>
                 <button class="player-play" type="button" aria-label="Lire la vidéo">
-                  <i class="fa-solid fa-play"></i>
+                  <i class="fa-solid fa-play" aria-hidden="true"></i>
                 </button>
                 <button class="player-expand" type="button" aria-label="Agrandir la vidéo">
-                  <i class="fa-solid fa-expand"></i>
+                  <i class="fa-solid fa-expand" aria-hidden="true"></i>
                 </button>
                 <span class="player-timecode mono" data-timecode>00:00</span>
               </div>
@@ -437,203 +507,202 @@
           </div>
         </article>
 
+        <!-- 2 — Analyse sport (image + notebook + rapport consultables) -->
+        <article class="project-card" data-reveal data-project-docs
+          data-notebook-src="Images-logo/analyse_sport/AnalyseSport.ipynb"
+          data-report-src="Images-logo/analyse_sport/Rapport_Analyse_Performances_Football.md"
+          data-doc-title="analyse_sport — documentation">
+          <div class="project-media">
+            <button class="player-window gallery-preview-trigger" type="button" data-gallery-trigger
+              data-gallery-title="analyse_sport — présentation"
+              aria-haspopup="dialog" aria-label="Agrandir la présentation">
+              <span class="player-bar">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                <span class="player-title mono">analyse_sport</span>
+                <span class="player-status mono"><i class="fa-solid fa-image" aria-hidden="true"></i>1</span>
+              </span>
+              <span class="gallery-preview-stage">
+                <img src="Images-logo/analyse_sport/accueil.png" alt="Aperçu du projet Analyse Sport" loading="lazy">
+                <span class="gallery-preview-overlay">
+                  <span class="gallery-preview-icon"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+                  <span class="gallery-preview-label mono">Agrandir</span>
+                </span>
+              </span>
+            </button>
 
+            <template data-gallery-template>
+              <figure class="gallery-slide">
+                <img src="Images-logo/analyse_sport/accueil.png" alt="AnalyseSport — présentation">
+              </figure>
+            </template>
+          </div>
+          <div class="project-info">
+            <span class="project-tag mono">Data Analyse</span>
+            <h3>Data Performance sportive</h3>
+            <p>Donnée de Panel. Analyse de données de performance footballistique dans le temps.</p>
+            <ul class="tech-chips">
+              <li>Google colab</li><li>Python</li><li>Pandas</li><li>Matplotlib</li><li>sklearn</li>
+            </ul>
+            <div class="project-actions">
+              <button class="btn btn-ghost btn-sm" type="button" data-doc-open="notebook">
+                <i class="fa-solid fa-code" aria-hidden="true"></i> Consulter le notebook
+              </button>
+              <button class="btn btn-ghost btn-sm" type="button" data-doc-open="report">
+                <i class="fa-solid fa-file-lines" aria-hidden="true"></i> Lire le rapport
+              </button>
+            </div>
+          </div>
+        </article>
 
-        <!-- 3 — Analyse sport (image + notebook + rapport consultables) -->
-<article class="project-card" data-reveal data-project-docs
-  data-notebook-src="Images-logo/analyse_sport/AnalyseSport.ipynb"
-  data-report-src="Images-logo/analyse_sport/Rapport_Analyse_Performances_Football.md"
-  data-doc-title="analyse_sport — documentation">
-  <div class="project-media">
-    <button class="player-window gallery-preview-trigger" type="button" data-gallery-trigger
-      data-gallery-title="analyse_sport — présentation"
-      aria-haspopup="dialog" aria-label="Agrandir la présentation">
-      <span class="player-bar">
-        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-        <span class="player-title mono">analyse_sport</span>
-        <span class="player-status mono"><i class="fa-solid fa-image" aria-hidden="true"></i>1</span>
-      </span>
-      <span class="gallery-preview-stage">
-        <img src="Images-logo/analyse_sport/accueil.png" alt="Aperçu du projet Analyse Sport" loading="lazy">
-        <span class="gallery-preview-overlay">
-          <span class="gallery-preview-icon"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
-          <span class="gallery-preview-label mono">Agrandir</span>
-        </span>
-      </span>
-    </button>
+        <!-- 3 — Traitement des données vétérinaires (script R + rapport) -->
+        <article class="project-card" data-reveal data-project-docs
+          data-notebook-src="Images-logo/traitement_donnee_veto/these_gloria_traitement_script_R.R"
+          data-report-src="Images-logo/traitement_donnee_veto/Rapport_Traitement_VETO_DATA.md"
+          data-doc-title="traitement_donnee_veto — documentation">
+          <div class="project-media">
+            <button class="player-window gallery-preview-trigger" type="button" data-doc-open="notebook"
+              aria-haspopup="dialog" aria-label="Consulter le script de traitement">
+              <span class="player-bar">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                <span class="player-title mono">these_gloria_traitement_script_R.R</span>
+                <span class="player-status mono"><i class="fa-solid fa-code" aria-hidden="true"></i>R</span>
+              </span>
+              <span class="gallery-preview-stage doc-preview-stage">
+                <span class="doc-preview-lines" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                </span>
+                <span class="gallery-preview-overlay">
+                  <span class="gallery-preview-icon"><i class="fa-solid fa-broom" aria-hidden="true"></i></span>
+                  <span class="gallery-preview-label mono">Consulter le script &amp; le rapport</span>
+                </span>
+              </span>
+            </button>
+          </div>
+          <div class="project-info">
+            <span class="project-tag mono">Data · R · Traitement</span>
+            <h3>Traitement des données vétérinaires</h3>
+            <p>Apurement et harmonisation de la base d'enquête : fusion des colonnes « Autre / Préciser »,
+              nettoyage textuel, uniformisation des modalités (transport, énergie, périodicité, fréquences
+              de nettoyage) — base prête pour l'analyse statistique.</p>
+            <ul class="tech-chips">
+              <li>R</li><li>dplyr</li><li>stringi</li><li>tidyverse</li><li>openxlsx</li>
+            </ul>
+            <div class="project-actions">
+              <button class="btn btn-ghost btn-sm" type="button" data-doc-open="notebook">
+                <i class="fa-solid fa-code" aria-hidden="true"></i> Consulter le script R
+              </button>
+              <button class="btn btn-ghost btn-sm" type="button" data-doc-open="report">
+                <i class="fa-solid fa-file-lines" aria-hidden="true"></i> Lire le rapport
+              </button>
+            </div>
+          </div>
+        </article>
 
-    <template data-gallery-template>
-      <figure class="gallery-slide">
-        <img src="Images-logo/analyse_sport/accueil.png" alt="AnalyseSport — présentation">
-      </figure>
-    </template>
-  </div>
-  <div class="project-info">
-    <span class="project-tag mono">Data Analyse</span>
-    <h3>Data Performance sportive</h3>
-    <p>Donnée de Panel. Analyse de données de performance footballistique dans le temps.</p>
-    <ul class="tech-chips">
-      <li>Google colab</li><li>Python</li><li>Pandas</li><li>Matplotlib</li><li>sklearn</li>
-    </ul>
-    <div class="project-actions">
-      <button class="btn btn-ghost btn-sm" type="button" data-doc-open="notebook">
-        <i class="fa-solid fa-code" aria-hidden="true"></i> Consulter le notebook
-      </button>
-      <button class="btn btn-ghost btn-sm" type="button" data-doc-open="report">
-        <i class="fa-solid fa-file-lines" aria-hidden="true"></i> Lire le rapport
-      </button>
-    </div>
-  </div>
-</article>
+        <!-- 4 — Analyse chaîne de froid (script R + rapport) -->
+        <article class="project-card" data-reveal data-project-docs
+          data-notebook-src="Images-logo/analyse_chaine_froid_bf/veto_data_analyse.R"
+          data-report-src="Images-logo/analyse_chaine_froid_bf/Rapport_Analyse_VETO_DATA.md"
+          data-doc-title="analyse_chaine_froid_bf — documentation">
+          <div class="project-media">
+            <button class="player-window gallery-preview-trigger" type="button" data-doc-open="notebook"
+              aria-haspopup="dialog" aria-label="Consulter le script d'analyse">
+              <span class="player-bar">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                <span class="player-title mono">veto_data_analyse.R</span>
+                <span class="player-status mono"><i class="fa-solid fa-code" aria-hidden="true"></i>R</span>
+              </span>
+              <span class="gallery-preview-stage doc-preview-stage">
+                <span class="doc-preview-lines" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                </span>
+                <span class="gallery-preview-overlay">
+                  <span class="gallery-preview-icon"><i class="fa-solid fa-chart-simple" aria-hidden="true"></i></span>
+                  <span class="gallery-preview-label mono">Consulter le script &amp; le rapport</span>
+                </span>
+              </span>
+            </button>
+          </div>
+          <div class="project-info">
+            <span class="project-tag mono">Data · R · Analyse</span>
+            <h3>Chaîne de froid — Burkina Faso</h3>
+            <p>Analyse statistique complète des données d'enquête : taux par poste, chi², odds ratios,
+              score de connaissances et de pratiques sur la gestion de la chaîne de froid des vaccins
+              vétérinaires.</p>
+            <ul class="tech-chips">
+              <li>R</li><li>dplyr</li><li>openxlsx</li><li>epitools</li><li>ggplot2</li>
+            </ul>
+            <div class="project-actions">
+              <button class="btn btn-ghost btn-sm" type="button" data-doc-open="notebook">
+                <i class="fa-solid fa-code" aria-hidden="true"></i> Consulter le script R
+              </button>
+              <button class="btn btn-ghost btn-sm" type="button" data-doc-open="report">
+                <i class="fa-solid fa-file-lines" aria-hidden="true"></i> Lire le rapport
+              </button>
+            </div>
+          </div>
+        </article>
 
-       <!-- 5 — Traitement des données vétérinaires (script R + rapport) -->
-<article class="project-card" data-reveal data-project-docs
-  data-notebook-src="Images-logo/traitement_donnee_veto/these_gloria_traitement_script_R.R"
-  data-report-src="Images-logo/traitement_donnee_veto/Rapport_Traitement_VETO_DATA.md"
-  data-doc-title="traitement_donnee_veto — documentation">
-  <div class="project-media">
-    <button class="player-window gallery-preview-trigger" type="button" data-doc-open="notebook"
-      aria-haspopup="dialog" aria-label="Consulter le script de traitement">
-      <span class="player-bar">
-        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-        <span class="player-title mono">these_gloria_traitement_script_R.R</span>
-        <span class="player-status mono"><i class="fa-solid fa-code" aria-hidden="true"></i>R</span>
-      </span>
-      <span class="gallery-preview-stage doc-preview-stage">
-        <span class="doc-preview-lines" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span>
-        </span>
-        <span class="gallery-preview-overlay">
-          <span class="gallery-preview-icon"><i class="fa-solid fa-broom" aria-hidden="true"></i></span>
-          <span class="gallery-preview-label mono">Consulter le script &amp; le rapport</span>
-        </span>
-      </span>
-    </button>
-  </div>
-  <div class="project-info">
-    <span class="project-tag mono">Data · R · Traitement</span>
-    <h3>Traitement des données vétérinaires</h3>
-    <p>Apurement et harmonisation de la base d'enquête : fusion des colonnes « Autre / Préciser »,
-      nettoyage textuel, uniformisation des modalités (transport, énergie, périodicité, fréquences
-      de nettoyage) — base prête pour l'analyse statistique.</p>
-    <ul class="tech-chips">
-      <li>R</li><li>dplyr</li><li>stringi</li><li>tidyverse</li><li>openxlsx</li>
-    </ul>
-    <div class="project-actions">
-      <button class="btn btn-ghost btn-sm" type="button" data-doc-open="notebook">
-        <i class="fa-solid fa-code" aria-hidden="true"></i> Consulter le script R
-      </button>
-      <button class="btn btn-ghost btn-sm" type="button" data-doc-open="report">
-        <i class="fa-solid fa-file-lines" aria-hidden="true"></i> Lire le rapport
-      </button>
-    </div>
-  </div>
-</article>
-       <!-- 6 — Analyse chaîne de froid (script R + rapport) -->
-<article class="project-card" data-reveal data-project-docs
-  data-notebook-src="Images-logo/analyse_chaine_froid_bf/veto_data_analyse.R"
-  data-report-src="Images-logo/analyse_chaine_froid_bf/Rapport_Analyse_VETO_DATA.md"
-  data-doc-title="analyse_chaine_froid_bf — documentation">
-  <div class="project-media">
-    <button class="player-window gallery-preview-trigger" type="button" data-doc-open="notebook"
-      aria-haspopup="dialog" aria-label="Consulter le script d'analyse">
-      <span class="player-bar">
-        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-        <span class="player-title mono">veto_data_analyse.R</span>
-        <span class="player-status mono"><i class="fa-solid fa-code" aria-hidden="true"></i>R</span>
-      </span>
-      <span class="gallery-preview-stage doc-preview-stage">
-        <span class="doc-preview-lines" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span>
-        </span>
-        <span class="gallery-preview-overlay">
-          <span class="gallery-preview-icon"><i class="fa-solid fa-chart-simple" aria-hidden="true"></i></span>
-          <span class="gallery-preview-label mono">Consulter le script &amp; le rapport</span>
-        </span>
-      </span>
-    </button>
-  </div>
-  <div class="project-info">
-    <span class="project-tag mono">Data · R · Analyse</span>
-    <h3>Chaîne de froid — Burkina Faso</h3>
-    <p>Analyse statistique complète des données d'enquête : taux par poste, chi², odds ratios,
-      score de connaissances et de pratiques sur la gestion de la chaîne de froid des vaccins
-      vétérinaires.</p>
-    <ul class="tech-chips">
-      <li>R</li><li>dplyr</li><li>openxlsx</li><li>epitools</li><li>ggplot2</li>
-    </ul>
-    <div class="project-actions">
-      <button class="btn btn-ghost btn-sm" type="button" data-doc-open="notebook">
-        <i class="fa-solid fa-code" aria-hidden="true"></i> Consulter le script R
-      </button>
-      <button class="btn btn-ghost btn-sm" type="button" data-doc-open="report">
-        <i class="fa-solid fa-file-lines" aria-hidden="true"></i> Lire le rapport
-      </button>
-    </div>
-  </div>
-</article>
+        <!-- 5 — Dashboard des ventes — Excel interactif -->
+        <article class="project-card" data-reveal data-project-docs
+          data-notebook-src="Images-logo/Excel/tableau_de_bord_ventes.xlsm"
+          data-report-src="Images-logo/Excel/rapport.md"
+          data-doc-title="tableau_de_bord_ventes — documentation">
+          <div class="project-media">
+            <button class="player-window gallery-preview-trigger" type="button" data-doc-open="notebook"
+              aria-haspopup="dialog" aria-label="Explorer le dashboard interactif">
+              <span class="player-bar">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                <span class="player-title mono">tableau_de_bord_ventes.xlsm</span>
+                <span class="player-status mono"><i class="fa-solid fa-table" aria-hidden="true"></i>7</span>
+              </span>
+              <span class="gallery-preview-stage doc-preview-stage">
+                <span class="doc-preview-lines" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                </span>
+                <span class="gallery-preview-overlay">
+                  <span class="gallery-preview-icon"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></span>
+                  <span class="gallery-preview-label mono">Explorer le dashboard</span>
+                </span>
+              </span>
+            </button>
+          </div>
+          <div class="project-info">
+            <span class="project-tag mono">Data · Excel · VBA</span>
+            <h3>Tableau de bord des ventes — Épicerie multi-boutiques</h3>
+            <p>Simulation d'une chaîne de 5 boutiques d'épicerie au Burkina Faso&nbsp;: génération de
+              données de ventes réalistes (saisonnalité Ramadan, Tabaski, hivernage), calcul de KPIs par
+              formules Excel (SUMIFS/COUNTIFS/AVERAGEIFS), graphiques dynamiques et macros VBA
+              (actualisation, export PDF, filtrage par boutique).</p>
+            <ul class="tech-chips">
+              <li>Python</li><li>openpyxl</li><li>pandas</li><li>Excel</li><li>VBA</li>
+            </ul>
+            <div class="project-actions">
+              <button class="btn btn-ghost btn-sm" type="button" data-doc-open="notebook">
+                <i class="fa-solid fa-table" aria-hidden="true"></i> Explorer le dashboard
+              </button>
+              <button class="btn btn-ghost btn-sm" type="button" data-doc-open="report">
+                <i class="fa-solid fa-file-lines" aria-hidden="true"></i> Lire le rapport
+              </button>
+              <a class="btn btn-ghost btn-sm" href="Images-logo/Excel/tableau_de_bord_ventes.xlsm" download>
+                <i class="fa-solid fa-download" aria-hidden="true"></i> Télécharger (.xlsm)
+              </a>
+            </div>
+          </div>
+        </article>
 
-<!-- Dashboard des ventes — Excel interactif -->
-<article class="project-card" data-reveal data-project-docs
-  data-notebook-src="Images-logo/Excel/tableau_de_bord_ventes.xlsm"
-  data-report-src="Images-logo/Excel/rapport.md"
-  data-doc-title="tableau_de_bord_ventes — documentation">
-  <div class="project-media">
-    <button class="player-window gallery-preview-trigger" type="button" data-doc-open="notebook"
-      aria-haspopup="dialog" aria-label="Explorer le dashboard interactif">
-      <span class="player-bar">
-        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-        <span class="player-title mono">tableau_de_bord_ventes.xlsm</span>
-        <span class="player-status mono"><i class="fa-solid fa-table" aria-hidden="true"></i>7</span>
-      </span>
-      <span class="gallery-preview-stage doc-preview-stage">
-        <span class="doc-preview-lines" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span>
-        </span>
-        <span class="gallery-preview-overlay">
-          <span class="gallery-preview-icon"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></span>
-          <span class="gallery-preview-label mono">Explorer le dashboard</span>
-        </span>
-      </span>
-    </button>
-  </div>
-  <div class="project-info">
-    <span class="project-tag mono">Data · Excel · VBA</span>
-    <h3>Tableau de bord des ventes — Épicerie multi-boutiques</h3>
-    <p>Simulation d'une chaîne de 5 boutiques d'épicerie au Burkina Faso&nbsp;: génération de
-      données de ventes réalistes (saisonnalité Ramadan, Tabaski, hivernage), calcul de KPIs par
-      formules Excel (SUMIFS/COUNTIFS/AVERAGEIFS), graphiques dynamiques et macros VBA
-      (actualisation, export PDF, filtrage par boutique).</p>
-    <ul class="tech-chips">
-      <li>Python</li><li>openpyxl</li><li>pandas</li><li>Excel</li><li>VBA</li>
-    </ul>
-    <div class="project-actions">
-      <button class="btn btn-ghost btn-sm" type="button" data-doc-open="notebook">
-        <i class="fa-solid fa-table" aria-hidden="true"></i> Explorer le dashboard
-      </button>
-      <button class="btn btn-ghost btn-sm" type="button" data-doc-open="report">
-        <i class="fa-solid fa-file-lines" aria-hidden="true"></i> Lire le rapport
-      </button>
-      <a class="btn btn-ghost btn-sm" href="Images-logo/Excel/tableau_de_bord_ventes.xlsm" download>
-        <i class="fa-solid fa-download" aria-hidden="true"></i> Télécharger (.xlsm)
-      </a>
-    </div>
-  </div>
-</article>
-
-        <!-- 7 — aperçu + galerie en lightbox -->
+        <!-- 6 — Gestion de bibliothèque (galerie en lightbox) -->
         <article class="project-card" data-reveal>
           <div class="project-media">
             <button class="player-window gallery-preview-trigger" type="button" data-gallery-trigger
               data-gallery-title="bibliotheque_django — captures"
-              aria-haspopup="dialog" aria-label="Ouvrir la galerie de captures — Gestion de bibliothèque (17 images)">
+              aria-haspopup="dialog" aria-label="Ouvrir la galerie de captures — Gestion de bibliothèque (16 images)">
               <span class="player-bar">
                 <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
                 <span class="player-title mono">bibliotheque_django</span>
-                <span class="player-status mono"><i class="fa-solid fa-images" aria-hidden="true"></i>17</span>
+                <span class="player-status mono"><i class="fa-solid fa-images" aria-hidden="true"></i>16</span>
               </span>
               <span class="gallery-preview-stage">
                 <img src="Images-logo/bibliotheque_django/dashboard_admin.png" alt="Aperçu du projet Gestion de bibliothèque" loading="lazy">
@@ -646,7 +715,7 @@
 
             <template data-gallery-template>
               <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/connexion.png" alt="Connexion étudiant"></figure>
-             <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/inscription.png" alt="Inscription étudiant"></figure>
+              <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/inscription.png" alt="Inscription étudiant"></figure>
               <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/dashboard.png" alt="Tableau de bord — ETUDIANT"></figure>
               <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/emprunts_utilisateur.png" alt="Etudiant - Mes emprunts en cours"></figure>
               <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/recherche_livre_avance.png" alt="ETUDIANT - Catalogue et recherche de livres"></figure>
@@ -654,7 +723,7 @@
               <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/connexion_admin.png" alt="Connexion administrateur"></figure>
               <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/inscription_admin.png" alt="Inscription administrateur"></figure>
               <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/dashboard_admin.png" alt="Tableau de bord admin — BiblioSys"></figure>
-              <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/dashboard_admin_suite.png" alt="Tableau de bord admin — BiblioSys"></figure>
+              <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/dashboard_admin_suite.png" alt="Tableau de bord admin — BiblioSys (suite)"></figure>
               <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/gestion_etudiant.png" alt="ADMIN - Gestion des étudiants"></figure>
               <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/gestion_livre.png" alt="ADMIN - Gestion des livres"></figure>
               <figure class="gallery-slide"><img src="Images-logo/bibliotheque_django/gestion_location.png" alt="ADMIN - Gestion des locations"></figure>
@@ -674,46 +743,45 @@
             </ul>
           </div>
         </article>
-<!-- TODOLIST -->
-<article class="project-card" data-reveal>
-  <div class="project-media">
-    <button class="player-window gallery-preview-trigger" type="button" data-gallery-trigger
-      data-gallery-title="todolist_django — captures"
-      aria-haspopup="dialog" aria-label="Ouvrir la galerie de captures — Todolist (4 images)">
-      <span class="player-bar">
-        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-        <span class="player-title mono">todolist_django</span>
-        <span class="player-status mono"><i class="fa-solid fa-images" aria-hidden="true"></i>4</span>
-      </span>
-      <span class="gallery-preview-stage">
-        <img src="Images-logo/todolist/connexion.png" alt="Aperçu du projet Todolist" loading="lazy">
-        <span class="gallery-preview-overlay">
-          <span class="gallery-preview-icon"><i class="fa-solid fa-images" aria-hidden="true"></i></span>
-          <span class="gallery-preview-label mono">Voir en images</span>
-        </span>
-      </span>
-    </button>
 
-    <template data-gallery-template>
-      <figure class="gallery-slide"><img src="Images-logo/todolist/connexion.png" alt="Connexion — Todolist"></figure>
-     <figure class="gallery-slide"><img src="Images-logo/todolist/inscription.png" alt="Inscription — Todolist"></figure>
-      <figure class="gallery-slide"><img src="Images-logo/todolist/dashboard.png" alt="Tableau de bord — Todolist"></figure>
-      <figure class="gallery-slide"><img src="Images-logo/todolist/taches.png" alt="Ajout d'une tâche"></figure>
-      <figure class="gallery-slide"><img src="Images-logo/todolist/mission.png" alt="Liste des tâches"></figure>
-    </template>
-  </div>
-  <div class="project-info">
-    <span class="project-tag mono">Web · Django</span>
-    <h3>Todolist</h3>
-    <p>Application de gestion de tâches avec interface épurée, pensée pour un usage quotidien
-      rapide et sans friction.</p>
-    <ul class="tech-chips">
-      <li>Django</li><li>SQLite</li><li>JavaScript</li>
-    </ul>
-  </div>
-</article>
-        
+        <!-- 7 — Todolist -->
+        <article class="project-card" data-reveal>
+          <div class="project-media">
+            <button class="player-window gallery-preview-trigger" type="button" data-gallery-trigger
+              data-gallery-title="todolist_django — captures"
+              aria-haspopup="dialog" aria-label="Ouvrir la galerie de captures — Todolist (5 images)">
+              <span class="player-bar">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                <span class="player-title mono">todolist_django</span>
+                <span class="player-status mono"><i class="fa-solid fa-images" aria-hidden="true"></i>5</span>
+              </span>
+              <span class="gallery-preview-stage">
+                <img src="Images-logo/todolist/connexion.png" alt="Aperçu du projet Todolist" loading="lazy">
+                <span class="gallery-preview-overlay">
+                  <span class="gallery-preview-icon"><i class="fa-solid fa-images" aria-hidden="true"></i></span>
+                  <span class="gallery-preview-label mono">Voir en images</span>
+                </span>
+              </span>
+            </button>
 
+            <template data-gallery-template>
+              <figure class="gallery-slide"><img src="Images-logo/todolist/connexion.png" alt="Connexion — Todolist"></figure>
+              <figure class="gallery-slide"><img src="Images-logo/todolist/inscription.png" alt="Inscription — Todolist"></figure>
+              <figure class="gallery-slide"><img src="Images-logo/todolist/dashboard.png" alt="Tableau de bord — Todolist"></figure>
+              <figure class="gallery-slide"><img src="Images-logo/todolist/taches.png" alt="Ajout d'une tâche"></figure>
+              <figure class="gallery-slide"><img src="Images-logo/todolist/mission.png" alt="Liste des tâches"></figure>
+            </template>
+          </div>
+          <div class="project-info">
+            <span class="project-tag mono">Web · Django</span>
+            <h3>Todolist</h3>
+            <p>Application de gestion de tâches avec interface épurée, pensée pour un usage quotidien
+              rapide et sans friction.</p>
+            <ul class="tech-chips">
+              <li>Django</li><li>SQLite</li><li>JavaScript</li>
+            </ul>
+          </div>
+        </article>
 
       </div>
     </div>
@@ -729,42 +797,43 @@
           <h2 class="section-title">Un projet de données ou d'automatisation en tête&nbsp;?</h2>
           <p>Décrivez-moi votre besoin — je reviens vers vous sous 24h avec une première approche.</p>
           <div class="contact-channels">
-            <a href="https://wa.me/qr/6LASBTSKULJ3O1" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>WhatsApp</a>
-            <a href="https://www.linkedin.com/in/ariel-drabo-78a99b345" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>LinkedIn</a>
-            <a href="https://github.com/ArielPubg" target="_blank" rel="noopener"><i class="fab fa-github"></i>GitHub</a>
+            <a href="https://wa.me/qr/6LASBTSKULJ3O1" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i>WhatsApp</a>
+            <a href="https://www.linkedin.com/in/ariel-drabo-78a99b345" target="_blank" rel="noopener noreferrer me"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+            <a href="https://github.com/ArielPubg" target="_blank" rel="noopener noreferrer me"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a>
           </div>
+
           <!-- ============ QR CODE PARTAGE ============ -->
-<div class="qr-share" data-reveal data-reveal-delay="2">
- <div class="qr-share-visual">
-  <div id="qr-canvas" aria-label="QR code vers ce portfolio"></div>
-  <span class="qr-share-fallback" hidden>
-    <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
-  </span>
-</div>
-  <div class="qr-share-content">
-    <p class="qr-share-eyebrow mono">// Partager</p>
-    <p class="qr-share-title">Scanner pour ouvrir mon portfolio</p>
-    <div class="qr-share-actions">
-      <button type="button" class="btn btn-ghost btn-sm" data-qr-download>
-        <i class="fa-solid fa-download" aria-hidden="true"></i> PNG
-      </button>
-      <button type="button" class="btn btn-ghost btn-sm" data-qr-copy>
-        <i class="fa-solid fa-link" aria-hidden="true"></i> Copier le lien
-      </button>
-    </div>
-  </div>
-</div>
+          <div class="qr-share" data-reveal data-reveal-delay="2">
+            <div class="qr-share-visual">
+              <div id="qr-canvas" role="img" aria-label="QR code vers ce portfolio"></div>
+              <span class="qr-share-fallback" hidden>
+                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="qr-share-content">
+              <p class="qr-share-eyebrow mono">// Partager</p>
+              <p class="qr-share-title">Scanner pour ouvrir mon portfolio</p>
+              <div class="qr-share-actions">
+                <button type="button" class="btn btn-ghost btn-sm" data-qr-download>
+                  <i class="fa-solid fa-download" aria-hidden="true"></i> PNG
+                </button>
+                <button type="button" class="btn btn-ghost btn-sm" data-qr-copy>
+                  <i class="fa-solid fa-link" aria-hidden="true"></i> Copier le lien
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <form class="contact-form" data-reveal data-reveal-delay="1" action="https://formspree.io/f/xaqygvdy" method="POST">
           <div class="form-fields">
             <div class="field">
               <label for="name">Nom</label>
-              <input id="name" type="text" name="name" placeholder="Votre nom" required>
+              <input id="name" type="text" name="name" placeholder="Votre nom" autocomplete="name" required>
             </div>
             <div class="field">
               <label for="email">Email</label>
-              <input id="email" type="email" name="email" placeholder="vous@exemple.com" required>
+              <input id="email" type="email" name="email" placeholder="vous@exemple.com" autocomplete="email" required>
             </div>
             <div class="field">
               <label for="services">Services</label>
@@ -793,7 +862,7 @@
             <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
 
             <button type="submit" class="btn btn-primary btn-block">
-              Envoyer le message <i class="fa-solid fa-paper-plane"></i>
+              Envoyer le message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
             </button>
             <p class="form-status" data-form-status role="status" aria-live="polite"></p>
           </div>
@@ -887,7 +956,7 @@
         <i class="fa-solid fa-download" aria-hidden="true"></i>
       </a>
       <a class="cert-viewer-open" data-cert-external
-        href="#" target="_blank" rel="noopener"
+        href="#" target="_blank" rel="noopener noreferrer"
         aria-label="Ouvrir dans un nouvel onglet">
         <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
       </a>
@@ -903,13 +972,17 @@
     </div>
   </div>
 </div>
+
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <span>&copy; 2026 Ariel Drabo</span>
-    <span class="mono">Tous droits reserves</span>
+    <span>&copy; 2026 Ariel Drabo (Drabo Ariel) — Data Analyst &amp; Développeur, Ouagadougou</span>
+    <span class="mono">Tous droits réservés</span>
   </div>
 </footer>
 
+<noscript>
+  <p style="text-align:center;padding:1rem">Ce portfolio fonctionne mieux avec JavaScript activé. Ariel Drabo — Data Analyst &amp; Développeur freelance à Ouagadougou.</p>
+</noscript>
 
 <script src="JS/index.js"></script>
 <script src="JS/form.js"></script>
